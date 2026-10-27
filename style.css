@@ -1,0 +1,129 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #f1f5f9;
+    background:
+        radial-gradient(ellipse at top, #234536, transparent 55%),
+        #101b19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.container {
+    width: 100%;
+    max-width: 720px;
+    text-align: center;
+}
+
+.subtitulo {
+    color: #9bd6ad;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: clamp(30px, 6vw, 48px);
+    margin: 12px 0 28px;
+}
+
+.cartao {
+    padding: 28px;
+    background: #1b2b26;
+    border: 1px solid #456858;
+    border-radius: 18px;
+    box-shadow: 0 18px 50px #0005;
+}
+
+.imagem-floresta {
+    padding: 35px 10px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    font-size: 48px;
+    background: linear-gradient(135deg, #183b2c, #263d52);
+}
+
+.progresso {
+    color: #9bd6ad;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+#texto-cena {
+    color: #d4e0d9;
+    line-height: 1.8;
+    min-height: 60px;
+}
+
+.opcoes {
+    display: grid;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.botao-escolha,
+.botao-reiniciar {
+    padding: 15px 18px;
+    border: 1px solid #6a9d7c;
+    border-radius: 10px;
+    background: #294d39;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.botao-escolha:hover,
+.botao-reiniciar:hover {
+    background: #397251;
+    transform: translateY(-2px);
+}
+
+.botao-escolha:focus-visible,
+.botao-reiniciar:focus-visible {
+    outline: 3px solid #b5f5c8;
+    outline-offset: 3px;
+}
+
+.mensagem {
+    color: #b5f5c8;
+    line-height: 1.6;
+}
+
+footer {
+    color: #a9bdb2;
+    font-size: 13px;
+    margin-top: 22px;
+}
+
+.botao-reiniciar {
+    margin-top: 8px;
+    background: transparent;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 14px;
+    }
+
+    .cartao {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
