@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uma aventura interativa em uma floresta misteriosa.">
+    <title>A Floresta Misteriosa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <p class="subtitulo">UMA AVENTURA INTERATIVA</p>
+            <h1>A Floresta Misteriosa</h1>
+        </header>
+
+        <section id="aventura" class="cartao" data-cena="inicio">
+            <div class="imagem-floresta" role="img"
+                 aria-label="Ilustração de uma floresta misteriosa">
+                <span aria-hidden="true">🌲 🌙 🌲</span>
+            </div>
+
+            <p id="progresso" class="progresso">Capítulo 1</p>
+            <h2 id="titulo-cena">O início da jornada</h2>
+
+            <p id="texto-cena">
+                Você encontra uma floresta misteriosa ao anoitecer.
+                Dois caminhos aparecem à sua frente. Qual deles escolher?
+            </p>
+
+            <div id="opcoes" class="opcoes">
+                <button class="botao-escolha" data-destino="rio">
+                    Seguir o som do rio
+                </button>
+                <button class="botao-escolha" data-destino="caverna">
+                    Explorar uma caverna
+                </button>
+            </div>
+
+            <p id="mensagem" class="mensagem" aria-live="polite"></p>
+        </section>
+
+        <footer>
+            <p>Suas escolhas determinam o seu destino.</p>
+            <button id="reiniciar" class="botao-reiniciar">
+                Reiniciar aventura
+            </button>
+        </footer>
+    </main>
+</body>
+</html>
